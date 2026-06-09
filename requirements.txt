@@ -1,0 +1,22 @@
+# Universal Bank Statement Parser - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# PDF parsing
+pdfplumber>=0.11.0
+
+# Data processing
+pandas>=2.0.0
+openpyxl>=3.1.0          # XLSX parsing
+xlrd>=2.0.0               # XLS (legacy Excel) parsing
+
+# Google Gemini LLM (required for Tier 3 LLM fallback and Tier 4 Vision)
+google-genai>=1.38.0
+
+# Image conversion for scanned PDFs (Tier 4 Vision only)
+# Requires system dependency: poppler-utils
+# Ubuntu/Debian: sudo apt-get install poppler-utils
+# macOS: brew install poppler
+pdf2image>=1.17.0
+
+# HTTP client (used by gst_intelligence.py)
+requests>=2.32.0
